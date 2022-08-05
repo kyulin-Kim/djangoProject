@@ -1,0 +1,42 @@
+
+{% extends 'stocks/base.html' %}
+
+{% block content %}
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">key</th>
+      <th scope="col">value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">symbol</th>
+      <td>{{ stock.symbol }}</td>
+    </tr>
+    <tr>
+      <th scope="row">CompanyName</th>
+      <td>{{ stock.companyName }}</td>
+    </tr>
+    <tr>
+      <th scope="row">PrimaryExchange</th>
+      <td>{{ stock.primaryExchange }}</td>
+    </tr>
+    <tr>
+      <th scope="row">LatestTime</th>
+      <td>{{ stock.latestTime }}</td>
+    </tr>
+    <tr>
+      <th scope="row">Week52High</th>
+      <td>{{ stock.week52High }}</td>
+    </tr>
+    <tr>
+      <th scope="row">Week52Low</th>
+      <td>{{ stock.week52Low }}</td>
+    </tr>
+  </tbody>
+</table>
+
+
+{% endblock %}
